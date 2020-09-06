@@ -4,8 +4,10 @@
       <h4 class="">TOOLBOX</h4>
       <p>sua caixa de ferramentas!</p>
     </div>
-    <div class="col-12 px-5 pt-5">
-      <ListaDeApps />
+    <div class="container">
+      <div class="col-12 px-5 pt-5">
+        <ListaDeApps />
+      </div>
     </div>
   </div>
 </template>
