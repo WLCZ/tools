@@ -16,9 +16,9 @@ const routes = [
     component: () => import("../views/About.vue")
   },
   {
-    path: "/gerador-links-whats",
-    name: "gerador-links-whats",
-    component: () => import("../views/GeradorDeLinksWhatsApp.vue")
+    path: "/gerador-whatsapp",
+    name: "GeradorWhatsApp",
+    component: () => import("../views/GeradorWhatsAppLink.vue")
   }
 ];
 

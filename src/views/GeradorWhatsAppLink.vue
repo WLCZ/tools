@@ -1,5 +1,5 @@
 <template>
-  <div class="container mw1000">
+  <div class="container mw-1000">
     <div class="row">
       <div class="col-12 py-5">
         <div class="form-group">
@@ -21,11 +21,10 @@
           />
         </div>
         <div v-show="showBtn" class="row">
-          <div class="col-12 d-flex justify-content-between justify-content-lg-around">
-            <button
-              @click="Geralink()"
-              class="btn btn-success col-5"
-            >
+          <div
+            class="col-12 d-flex justify-content-between justify-content-lg-around"
+          >
+            <button @click="Geralink()" class="btn btn-success col-5">
               GERAR LINK
             </button>
             <button
@@ -47,12 +46,14 @@
             class="form-control"
             id="url"
             rows="3"
-            v-model="this.url" 
+            v-model="this.url"
             readonly
           ></textarea>
         </div>
       </div>
-      <div class="col-12 d-flex justify-content-between justify-content-lg-around">
+      <div
+        class="col-12 d-flex justify-content-between justify-content-lg-around"
+      >
         <button
           id="copiar"
           data-clipboard-target="#url"
@@ -60,7 +61,9 @@
         >
           COPIAR
         </button>
-        <a target="_blank" :href="this.url" class="btn btn-warning col-5">TESTAR</a>
+        <a target="_blank" :href="this.url" class="btn btn-warning col-5"
+          >TESTAR</a
+        >
       </div>
     </div>
     <Menu></Menu>
@@ -92,30 +95,27 @@ export default {
   },
   watch: {
     numero() {
-      (this.numero.replace(/[^0-9]/g, "").length >= 13)
-        ? this.showBtn = true
-        : this.showBtn = false;
+      this.numero.replace(/[^0-9]/g, "").length >= 13
+        ? (this.showBtn = true)
+        : (this.showBtn = false);
     }
   }
 };
 </script>
 
 <style>
-  .mw1000{
-    max-width: 1000px;
-  }
-
-  textarea{
-    resize: none;
-  }
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  input[type=number] {
-    -moz-appearance: textfield;
-  }
+.mw1000 {
+  max-width: 1000px;
+}
+textarea {
+  resize: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 </style>
