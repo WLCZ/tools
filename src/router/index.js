@@ -19,6 +19,11 @@ const routes = [
     path: "/gerador-whatsapp",
     name: "GeradorWhatsApp",
     component: () => import("../views/GeradorWhatsAppLink.vue")
+  },
+  {
+    path: "/gerador-de-border-radius",
+    name: "GeradorDeBorderRadius",
+    component: () => import("../views/GeradorDeBorderRadius.vue")
   }
 ];
 

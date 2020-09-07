@@ -6,6 +6,11 @@
           GERADOR DE LINKS PARA WHATSAPP
         </router-link>
       </div>
+      <div class="list-group-item">
+        <router-link to="/gerador-de-border-radius">
+          GERADOR DE BORDER-RADIUS
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
