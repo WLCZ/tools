@@ -1,9 +1,10 @@
 <template>
   <div class="">
     <div class="row">
-      <div class="col-12 text-center text-white bg-primary">
-        <h4>Gerador de Links para WhatsApp</h4>
-      </div>
+      <Header
+        titulo="Gerador de links para WhatsApp"
+        subtitulo="Crie links diretos para conversas no WhatsApp"
+      ></Header>
       <div class="container">
         <div class="col-12 py-5">
           <div class="form-group">
@@ -77,11 +78,13 @@
 
 <script>
 import Menu from "@/components/MenuBase.vue";
+import Header from "@/components/Header.vue";
 import ClipboardJS from "clipboard";
 new ClipboardJS("#copiar");
 export default {
   components: {
-    Menu
+    Menu,
+    Header
   },
   data() {
     return {

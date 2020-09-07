@@ -1,5 +1,5 @@
 <template>
-  <ul class="nav justify-content-center fixed-bottom bg-primary">
+  <ul class="nav justify-content-center fixed-bottom bg-m-secondary">
     <li class="nav-item">
       <router-link class="nav-link text-white" to="/">
         <div
@@ -23,7 +23,7 @@ export default {};
   border: none;
   transition: 0.4s;
   &:hover {
-    background-color: #3393fa;
+    background-color: #00000030;
   }
 }
 </style>
