@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://tools.giordane.dev/sitemap_index.xml
